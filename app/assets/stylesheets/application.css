@@ -13,3 +13,80 @@
  *= require_tree .
  *= require_self
  */
+
+.response-container {
+  background-image: url(eye-roll.png);
+  background-position: center;
+  background-size: 16em;
+  background-repeat: no-repeat;
+}
+
+#response-code {
+  -webkit-animation: rotation 12s infinite linear;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+}
+
+#whats-next {
+  color: #434343;
+  font-family: "Andale Mono";
+  font-size: 2em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+h2 {
+  color: #434343;
+  font-family: "Press Start 2P";
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  margin: 1em;
+}
+
+h1 {
+  color: #434343;
+  font-family: "Press Start 2P";
+  font-size: 4em;
+  line-height: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#level-2 {
+  display: block;
+  margin: auto;
+  width: 30rem;
+}
+
+.form-container {
+  margin: 1.5em auto;
+  width: 20rem;
+}
+
+#email-input,
+#click-me {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.25em;
+  padding: .5rem 1rem;
+  height: 2.25em;
+  width: 100%;
+}
+
+#click-me {
+  position: absolute;
+  bottom: 2em;
+  width: 20rem;
+  background-color: #00CDED;
+  color: #FFF;
+  border: none !important;
+}

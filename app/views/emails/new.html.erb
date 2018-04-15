@@ -1,0 +1,16 @@
+<h2>
+  Congratulations.<br/>
+  You have made it to...
+</h2>
+
+<h1>Level 2</h1>
+
+<%= image_tag "level-2", id: "level-2" %>
+
+<div class="form-container">
+  <%= form_for @email, id: "email-form" do |f| %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= f.email_field :email, required: true, placeholder: "Your email", id: "email-input" %>
+    <%= f.submit value: "Submit", id: "click-me" %>
+  <% end %>
+</div>
