@@ -7,6 +7,7 @@ jQuery(function($) {
     event.preventDefault();
 
     $("#click-me").css({
+      position: "absolute",
       left: (Math.random() * window.innerWidth) + "px",
       top: (Math.random() * window.innerHeight) + "px",
     })
