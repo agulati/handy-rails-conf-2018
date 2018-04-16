@@ -5,13 +5,24 @@
 
 <h1 class="three">Level 3</h1>
 
-<div class="response-container">
-  <div id="response-code">
-    .-. .- .. .-.. ... -.-. --- -. ..-. ..--- ----- .---- ---..
+<% if @coupon %>
+  <div class="response-container">
+    <div id="response-code">
+      <%= @coupon.morse_code %>
+    </div>
   </div>
-</div>
 
-<div id="whats-next">
-  cracked it? enter your promo code<br/>
-  @ handy.com/cleaning
-</div>
+  <div id="whats-next">
+    cracked it? enter your promo code<br/>
+    @ handy.com/cleaning
+  </div>
+<% else %>
+  <div class="none-left">
+  </div>
+  <div id="whats-next">
+    Oh no! The codes are all gone.<br/>
+    But we like your style. Come join us<br/>
+    @ handy.com/careers
+  </div>
+<% end %>
+

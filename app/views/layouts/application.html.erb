@@ -13,6 +13,9 @@
   <body>
     <div class="grid-container">
       <div class="grid-x">
+        <% flash.each do |key, value| %>
+          <div class="callout alert cell small-12 medium-8"><%= value.html_safe %></div>
+        <% end %>
         <div class="cell">
           <%= yield %>
         </div>
