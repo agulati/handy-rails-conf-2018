@@ -1,5 +1,5 @@
 class Coupon < ApplicationRecord
-  belongs_to :email
+  belongs_to :email, optional: true
   validates :coupon_code, presence: true, uniqueness: true
 
   scope :available, -> { where(email_id: nil) }
